@@ -1,0 +1,5 @@
+_CI_Scripts/
+coverage/
+dist/
+katalon-settings/
+node_modules/

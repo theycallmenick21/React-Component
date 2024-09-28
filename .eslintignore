@@ -1,0 +1,6 @@
+_CI_Scripts/
+coverage/
+dist/
+katalon-settings/
+node_modules/
+MicroFE_Config_Wizard.js

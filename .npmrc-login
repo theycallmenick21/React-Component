@@ -1,0 +1,3 @@
+registry=https://conexiom.pkgs.visualstudio.com/_packaging/cnxm_npm_feed/npm/registry/
+ 
+always-auth=true
