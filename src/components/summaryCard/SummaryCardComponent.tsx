@@ -1,5 +1,6 @@
 import './SummaryCardComponent.css'
 
+import { TrendingDown, TrendingUp } from '@mui/icons-material'
 import React from 'react'
 
 interface SummaryCardData {
@@ -14,6 +15,10 @@ interface SummaryCardComponentProps {
 }
 
 const SummaryCardComponent: React.FC<SummaryCardComponentProps> = ({ summaryCardData }) => {
+    const TrendingUpIcon = <TrendingUp aria-label="navigator icon" sx={{ color: '#008148', height: '14px', width: '14px' }} />
+
+    const TrendingDownIcon = <TrendingDown aria-label="navigator icon" sx={{ color: '#bf1932', height: '14px', width: '14px' }} />
+
     return (
         <div className="main-box">
             <div className="summary-card-box">
@@ -26,7 +31,7 @@ const SummaryCardComponent: React.FC<SummaryCardComponentProps> = ({ summaryCard
                                 <p className={`rising-percentage rising-percentage ${tab.higher ? 'higher' : 'lower'}`}>
                                     {tab.risingPercentage > 0 ? `+${tab.risingPercentage}` : tab.risingPercentage} %
                                 </p>
-                                <div className="icon"></div>
+                                <div className="icon">{tab.higher ? TrendingUpIcon : TrendingDownIcon}</div>
                             </div>
                         </div>
                     </div>
