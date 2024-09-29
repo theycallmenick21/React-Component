@@ -17,12 +17,16 @@
     box-sizing: border-box;
     align-items: flex-start;
     color: white;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Rubik";
     padding: 0 1%;
 }
 
 .label {
     width: fit-content;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .percentages-box {
@@ -33,7 +37,10 @@
 }
 
 .actual-percentage {
-    font-size: 40px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin: 0 0 0 0 !important;
 }
 
