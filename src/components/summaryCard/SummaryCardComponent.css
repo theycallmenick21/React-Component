@@ -1,0 +1,67 @@
+.main-box {
+    background-color: #3B5D75;
+}
+
+.summary-card-box {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    border-left: 6px solid #96b1c5;
+    background-color: #507792;
+    flex: 1 1 200px;
+    margin: 10px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    color: white;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    padding: 0 1%;
+}
+
+.label {
+    width: fit-content;
+}
+
+.percentages-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.actual-percentage {
+    font-size: 40px;
+    margin: 0 0 0 0 !important;
+}
+
+.rising-percentage-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    background-color: #FFFFFF;
+    padding: 2.5px;
+    border-radius: 15px;
+}
+
+.rising-percentage {
+    margin: 0 0 0 2.5px !important;
+    font-weight: bolder;
+}
+
+.rising-percentage.higher {
+    color: #008148;
+}
+
+.rising-percentage.lower {
+    color: #bf1932;
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 2.5px;
+}

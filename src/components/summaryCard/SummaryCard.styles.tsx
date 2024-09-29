@@ -1,33 +1,3 @@
-// import { Theme } from '@mui/material'
-
-// export const getTabStyles = ({ palette, spacing }: Theme) => ({
-//     alignItems: 'center',
-//     backgroundColor: '#507792',
-//     color: '#FFFFFF',
-//     content: '"orders with errors"',
-//     display: 'flex',
-//     flex: '1 0 0',
-//     flexDirection: 'row',
-//     fontFamily: 'Roboto',
-//     height: '42px',
-//     justifyContent: 'center',
-//     padding: `${spacing(2)} ${spacing(4)}`,
-// })
-
-// export const getContainerStyles = ({ palette, spacing }: Theme) => ({
-//     alignItems: 'center',
-//     backgroundColor: palette.common.white,
-//     display: 'flex',
-//     flexDirection: 'column',
-//     gap: spacing(1) ?? '8px',
-//     justifyContent: 'center',
-// })
-
-// export const getPrincipalTabStyles = () => ({
-//     width: '100%',
-//     flex: '1',
-//     boxSizing: 'border-box'
-// })
 import { Theme } from '@mui/material';
 
 export const getTabStyles = ({ palette, spacing }: Theme) => ({
@@ -41,13 +11,13 @@ export const getTabStyles = ({ palette, spacing }: Theme) => ({
     height: '42px',
     justifyContent: 'center',
     padding: `${spacing(2)} ${spacing(4)}`,
-    minWidth: 0, // Prevents the tabs from shrinking too much
+    minWidth: 0,
     '&.Mui-selected': {
         backgroundColor: 'white',
         borderTop: `4px solid #80deea`,
         fontWeight: 'bold',
     },
-})
+});
 
 export const getContainerStyles = ({ palette, spacing }: Theme) => ({
     alignItems: 'center',

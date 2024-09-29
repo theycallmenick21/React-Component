@@ -61,12 +61,15 @@ const TabsComponent: React.FC<TabsComponentProps> = ({ tabData }) => {
             value={value}
             onChange={handleChange}
             sx={getPrincipalTabStyles()}
+            variant="fullWidth"
+            TabIndicatorProps={{ style: { display: 'none' } }}
         >
             {tabData.map((tab, index) => (
                 <Tab
                     key={index}
                     label={tab.label}
                     sx={getTabStyles(theme)}
+                    style={{ minWidth: 0 }}
                 />
             ))}
         </Tabs>
